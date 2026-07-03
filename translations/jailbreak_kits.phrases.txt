@@ -2,9 +2,9 @@
 {
     "Prefix"
     {
-        "en"  " {LIGHTOLIVE} BY NIFFOX |"
-        "ru"  " {LIGHTOLIVE} BY NIFFOX |"
-        "ua"  " {LIGHTOLIVE} BY NIFFOX |"
+        "en"  " {LIGHTOLIVE} BY NIFFOX |{DEFAULT}"
+        "ru"  " {LIGHTOLIVE} BY NIFFOX |{DEFAULT}"
+        "ua"  " {LIGHTOLIVE} BY NIFFOX |{DEFAULT}"
     }
     "Kits_CooldownActive"
     {
@@ -53,5 +53,11 @@
         "en"  "A Riot Kit is available to you!"
         "ru"  "Вам доступен Бунт-Набор"
         "ua"  "Вам доступний Бунт-Набір"
+    }
+    "KitsMenu_OnlyTAvailable"
+    {
+        "en"  "Available only for prisoners."
+        "ru"  "Доступно только для заключенных."
+        "ua"  "Доступно тільки для ув'язнених"
     }
 }
