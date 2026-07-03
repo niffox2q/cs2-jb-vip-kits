@@ -1,0 +1,57 @@
+"Phrases"
+{
+    "Prefix"
+    {
+        "en"  " {LIGHTOLIVE} BY NIFFOX |"
+        "ru"  " {LIGHTOLIVE} BY NIFFOX |"
+        "ua"  " {LIGHTOLIVE} BY NIFFOX |"
+    }
+    "Kits_CooldownActive"
+    {
+        "en"  "You have an active cooldown for kits."
+        "ru"  "У Вас активен кулдаун на наборы."
+        "ua"  "У Вас активний кулдаун на набори."
+    }
+    "Kits_FreedayBlock"
+    {
+        "en"  "You cannot use kits during a Freeday."
+        "ru"  "Вы не можете использовать набор в Выходной день."
+        "ua"  "Ви не можете використовувати набір у Вихідний день."
+    }
+    "Kits_GameDayBlock"
+    {
+        "en"  "You cannot use kits during a Game day."
+        "ru"  "Вы не можете использовать набор в игровой день."
+        "ua"  "Ви не можете використовувати набір в ігровий день."
+    }
+    "KitsMenu_Title"
+    {
+        "en"  "Riot Kits"
+        "ru"  "Бунт Наборы"
+        "ua"  "Бунт Набори"
+    }
+    "KitsMenu_NoAvailableForYou"
+    {
+        "en"  "No kits available for you"
+        "ru"  "Нет доступных наборов"
+        "ua"  "Немає доступних наборів"
+    }
+    "KitsMenu_CantTakeCuzDead"
+    {
+        "en"  "You cannot take a kit while dead."
+        "ru"  "Вы не можете взять набор пока мертвы."
+        "ua"  "Ви не можете взяти набір, поки мертві."
+    }
+    "Kits_DropAllFirearms"
+    {
+        "en"  "Drop all your weapons before using a kit."
+        "ru"  "Выбросьте всё оружие перед использованием набора."
+        "ua"  "Викиньте всю зброю перед використанням набору."
+    }
+    "Kits_KitAvailable"
+    {
+        "en"  "A Riot Kit is available to you!"
+        "ru"  "Вам доступен Бунт-Набор"
+        "ua"  "Вам доступний Бунт-Набір"
+    }
+}
