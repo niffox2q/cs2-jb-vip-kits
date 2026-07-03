@@ -356,6 +356,13 @@ bool OpenKitsMenu(int iSlot, const char* szFeature){
         PrintSlotPrefixed(iSlot, GetTranslation("Kits_GameDayBlock"));
         return false;
     }
+
+    auto pController = CCSPlayerController::FromSlot(iSlot);
+    if (!pController) return false;
+    if (pController->GetTeam() != CS_TEAM_T) {
+        PrintSlotPrefixed(iSlot,"KitsMenu_OnlyTAvailable");
+        return false;
+    }
     Menu hMenu;
 
     menus_api->SetTitleMenu(hMenu,GetTranslation("KitsMenu_Title"));
