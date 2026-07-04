@@ -506,7 +506,7 @@ void jb_vip_kits::AllPluginsLoaded() {
             auto pController = CCSPlayerController::FromSlot(i);
             if (!pController || !pController->IsConnected()) continue;
             auto pPawn = pController->GetPlayerPawn();
-            if (!pPawn) return;
+            if (!pPawn) continue;
             if (g_iKitCooldown[i] <= 0) {
                 g_iKitCooldown[i] = 0;
                 if (vip_api->VIP_IsClientVIP(i) && vip_api->VIP_GetClientFeatureString(i,"jb_kits")[0] != '\0'){
@@ -552,4 +552,4 @@ const char* jb_vip_kits::GetLicense() { return "Private"; }
 const char* jb_vip_kits::GetLogTag() { return "[JB] Vip Kits"; }
 const char* jb_vip_kits::GetName() { return "[JB] Vip Kits"; }
 const char* jb_vip_kits::GetURL() { return "https://t.me/niffox_2q"; }
-const char* jb_vip_kits::GetVersion() { return "1.0.0"; }
+const char* jb_vip_kits::GetVersion() { return "1.0.1"; }
