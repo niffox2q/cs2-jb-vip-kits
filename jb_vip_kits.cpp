@@ -502,6 +502,12 @@ void jb_vip_kits::AllPluginsLoaded() {
 
     utils->HookEvent(g_PLID,"round_start",[](const char* szName, IGameEvent* pEvent, bool bDontBroadcast){
         g_mGrenadeDamage.clear();
+        if (g_bFreedayBlock && jailbreak_api->IsGlobalFreedayToday()) {
+            return false;
+        }
+        if (g_bGameDayBlock && jailbreak_api->IsGameDayToday()) {
+            return false;
+        }
         for (int i = 0; i < MAX_PLAYERS; i++) {
             auto pController = CCSPlayerController::FromSlot(i);
             if (!pController || !pController->IsConnected()) continue;
@@ -552,4 +558,4 @@ const char* jb_vip_kits::GetLicense() { return "Private"; }
 const char* jb_vip_kits::GetLogTag() { return "[JB] Vip Kits"; }
 const char* jb_vip_kits::GetName() { return "[JB] Vip Kits"; }
 const char* jb_vip_kits::GetURL() { return "https://t.me/niffox_2q"; }
-const char* jb_vip_kits::GetVersion() { return "1.0.1"; }
+const char* jb_vip_kits::GetVersion() { return "1.0.2"; }
